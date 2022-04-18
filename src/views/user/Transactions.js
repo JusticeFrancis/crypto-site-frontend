@@ -176,7 +176,7 @@ export  default function Transactions(props) {
   return (
     <>
 
-        {mobile ?
+        {mobile === false ?
         (
             <p style={{ color: 'red' }}>kindly set browser to desktop mode to view transactions</p>
         )
