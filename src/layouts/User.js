@@ -105,7 +105,6 @@ export default function User() {
  window.addEventListener('load',(event)=>{
     //check if user is auth
       const appUser = sessionStorage.getItem('appUser')
-      console.log(appUser)
       if(!appUser){
         window.location.href = '/auth/login'
       }

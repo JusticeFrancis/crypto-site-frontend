@@ -26,6 +26,14 @@ export default function Auth() {
 
   const appName = 'Invest App'
 
+  window.addEventListener('load',(event)=>{
+    //check if user is auth
+      const appUser = sessionStorage.getItem('appUser')
+      if(appUser){
+        window.location.href = '/user'
+      }
+    })
+
 
  // registerUser
   const registerUser = async()=>{
