@@ -330,7 +330,7 @@ export default function Credit(props) {
                                 type="email"
                                 className="border-0 px-3 py-3 placeholder-blueGray-300  bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                 disabled
-                                value={'ur928j4mr09jk0w9mw9wk9'}
+                                value={addr}
                                 
                             />
                             </div>
