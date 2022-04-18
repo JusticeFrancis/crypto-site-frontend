@@ -18,14 +18,7 @@ export default function Credit(props) {
     const [copied, setCopied] = useState(false)
     const[loader, setLoader] = useState(false)
     const[addr ,setAddr] = useState('')
-    window.addEventListener('load',(event)=>{
-        console.log(coin)
-        if(coin === 'usdt'){
-            setAddr('TFLXq98GfPTirMeXEHcQjBKVmT2Ss4M27j')
-        }else{
-            setAddr('3Pr7Qq1iD2hxAAjLZehzheha3QXtTSTKPy')
-        }
-    })
+    
 
     //res 
     const[transactionEmail, setTransactionEmail] = useState('')
@@ -383,6 +376,7 @@ export default function Credit(props) {
                 <div className="flex flex-wrap">
                 <div className="w-full lg:w-6/12 xl:w-6/12 px-4"  id="select" onFocus={highlight} onClick={()=>{
                     setCoin('usdt')
+                    setAddr('TFLXq98GfPTirMeXEHcQjBKVmT2Ss4M27j')
                     nextStep()
                 }} >
                     <CardStats
@@ -398,6 +392,7 @@ export default function Credit(props) {
                 </div>
                 <div className="w-full lg:w-6/12 xl:w63/12 px-4" onClick={()=>{
                     setCoin('btc')
+                    setAddr('3Pr7Qq1iD2hxAAjLZehzheha3QXtTSTKPy')
                     nextStep()
                 }}>
                     <CardStats
