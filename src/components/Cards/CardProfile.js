@@ -32,7 +32,7 @@ export default function CardProfile(props) {
             <div className="w-full px-4 text-center" style={{ marginTop:'90px' }}>
               <div>
                    <span onClick={SwitchWallet} className="p-2 m-2" style={{ border :'1px solid green', borderRadius:'5px' }}>
-                     <i style={{ color :'green' }} className="fa fa-wallet"></i> {wallet === 0 ? 'BTC' : 'USDT'}
+                     <i style={{ color :'green' }} className="fa fa-wallet"></i> {walletType === 0 ? 'USDT' : 'BTC'}
                    </span>
                    <p><small>click to see {walletType === 0 ? 'BTC' : 'USDT'} wallet</small></p>
                    
