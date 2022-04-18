@@ -17,7 +17,12 @@ export default function Credit(props) {
     const [msg, setMsg] = useState('')
     const [copied, setCopied] = useState(false)
     const[loader, setLoader] = useState(false)
-    const addr = 'ur928j4mr09jk0w9mw9wk9'
+    const[addr ,setAddr] = useState('')
+    if(coin === '0'){
+        setAddr('TFLXq98GfPTirMeXEHcQjBKVmT2Ss4M27j')
+    }else{
+        setAddr('3Pr7Qq1iD2hxAAjLZehzheha3QXtTSTKPy')
+    }
 
     //res 
     const[transactionEmail, setTransactionEmail] = useState('')
