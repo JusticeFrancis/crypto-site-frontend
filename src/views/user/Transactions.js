@@ -158,10 +158,13 @@ export  default function Transactions(props) {
             setLoader(false)
         }
         else{
-            closeModal(transactionId)
-            setLoader(false)
             setMsg('')
+            setLoader(false)
+            setTimeout(() => {
+                closeModal(transactionId)
+            }, 1000);
         }
+        setLoader(false)
 
 
 
@@ -354,11 +357,16 @@ export  default function Transactions(props) {
                                     >
                                     upload a screenshot to complete transaction
                                 </button>
-                               {loader === false
-                               ?(
                                 <div id={"myModal-"+data._id} class="modal">
-
                                 <div class="modal-content text-center">
+                               {loader === false
+                               ? null
+                                   :(
+                                    <div className="text-center">
+                                    <i className="fas fa-spinner fa-3x fa-pulse"></i>
+                                     </div>
+                                   )
+                                   }
                                 <p style={{ color : 'red' }}>{msg}</p>
                                 <span class="close" onClick={()=>{
                                     closeModal(data._id)
@@ -370,14 +378,8 @@ export  default function Transactions(props) {
                                     </form>
                                 </div>
 
+
                                 </div>
-                               )
-                               :(
-                                <div className="text-center">
-                                <i className="fas fa-spinner fa-3x fa-pulse"></i>
-                                 </div>
-                               )
-                               }
                                 </td>
                             </tr>
                             ))
