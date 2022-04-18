@@ -60,7 +60,7 @@ export default function Auth() {
     setBtnLoading(false)
     if(res.status === 'success'){
       sessionStorage.clear('appUser')
-      sessionStorage.setItem('appUser', res.newUser)
+      sessionStorage.setItem('appUser',JSON.stringify(res.newUser))
       window.location.href = '/user'
     }
   }
@@ -89,7 +89,6 @@ export default function Auth() {
     setBtnLoading(false)
     if(res.status === 'success'){
       sessionStorage.clear('appUser')
-      console.log({appuser :sessionStorage.getItem('appUser')})
       sessionStorage.setItem('appUser', JSON.stringify(res.user))
       window.location.href = '/user'  
     }

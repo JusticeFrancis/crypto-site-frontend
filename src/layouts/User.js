@@ -34,10 +34,7 @@ export default function User() {
     price_24h : 'loading',
     volume_24h : 'loading'
   })
-  const [bnb , setBnb] = useState({
-    price_24h : 'loading',
-    volume_24h : 'loading'
-  })
+ 
 
    //api route
    const backend = 'https://crypto-site-backend.herokuapp.com'
@@ -48,7 +45,6 @@ export default function User() {
     getBtcPrice()
     getUsdtPrice() 
     getEthPrice()
-    getBnbPrice()
    })
 
 
@@ -89,15 +85,7 @@ export default function User() {
 
   }
 
-  const getBnbPrice = async()=>{
-    const requestOptions = {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-  };
-  const response = await fetch("https://api.blockchain.com/v3/exchange/tickers/BNB-USD", requestOptions)
-  const res = await response.json()
-  setBnb(res)
-  }
+ 
 
 
 
@@ -196,7 +184,6 @@ const res = await response.json() */
                   btc = {btc}
                   usdt = {usdt}
                   eth = {eth}
-                  bnb = {bnb}
                   ></Dashboard>
                 </Route>
                 <Route path="/user/credit" exact >
