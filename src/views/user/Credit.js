@@ -19,7 +19,7 @@ export default function Credit(props) {
     const[loader, setLoader] = useState(false)
     const[addr ,setAddr] = useState('')
     window.addEventListener('load',(event)=>{
-        if(coin === 0){
+        if(coin === 'usdt'){
             setAddr('TFLXq98GfPTirMeXEHcQjBKVmT2Ss4M27j')
         }else{
             setAddr('3Pr7Qq1iD2hxAAjLZehzheha3QXtTSTKPy')
