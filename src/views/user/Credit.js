@@ -18,11 +18,13 @@ export default function Credit(props) {
     const [copied, setCopied] = useState(false)
     const[loader, setLoader] = useState(false)
     const[addr ,setAddr] = useState('')
-    if(coin === '0'){
-        setAddr('TFLXq98GfPTirMeXEHcQjBKVmT2Ss4M27j')
-    }else{
-        setAddr('3Pr7Qq1iD2hxAAjLZehzheha3QXtTSTKPy')
-    }
+    window.addEventListener('load',(event)=>{
+        if(coin === '0'){
+            setAddr('TFLXq98GfPTirMeXEHcQjBKVmT2Ss4M27j')
+        }else{
+            setAddr('3Pr7Qq1iD2hxAAjLZehzheha3QXtTSTKPy')
+        }
+    })
 
     //res 
     const[transactionEmail, setTransactionEmail] = useState('')
