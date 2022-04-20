@@ -513,10 +513,8 @@ export  default function Transactions(props) {
                                 {data.status === '0' ? (
                                     <div><i className="fas fa-circle text-red-500 mr-2"></i>not approved</div>
                                 ) :  null}
+                                
                                 {data.status === '1' ? (
-                                    <div><i className="fas fa-circle text-blue-500 mr-2" style={{color : 'darkblue'}}></i>sent screenshot</div>
-                                ) :  null}
-                                {data.status === '2' ? (
                                     <div><i className="fas fa-circle text-green-500 mr-2" style={{color : 'green'}}></i>approved</div>
                                 ) :  null}
                                 </td>
@@ -526,7 +524,7 @@ export  default function Transactions(props) {
                                 <div className="flex items-center">
                                     <span className="mr-2">
                                         {data.status === '0'? '50%': null}
-                                        {data.status === '2'? '100%': null}
+                                        {data.status === '1'? '100%': null}
                                     </span>
                                     <div className="relative w-full">
                                     <div className="overflow-hidden h-2 text-xs flex rounded bg-red-200">
