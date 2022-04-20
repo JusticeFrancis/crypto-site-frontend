@@ -39,7 +39,6 @@ export default function Settings(props) {
         }
         setLoader(false)
     }
-    getWallet()
   return (
     <>
     
