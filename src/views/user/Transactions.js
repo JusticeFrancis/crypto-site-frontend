@@ -349,6 +349,8 @@ export  default function Transactions(props) {
                                 </div>
                                 </td>
                                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
+                               {data.status === '0'
+                               ?(
                                 <button id="myBtn" onClick={(e)=>{
                                     openModal(data._id)
                                     setTransactionId(data._id)
@@ -358,6 +360,9 @@ export  default function Transactions(props) {
                                     >
                                     upload a screenshot to complete transaction
                                 </button>
+                               )
+                               : null
+                               }
                                 <div id={"myModal-"+data._id} class="modal">
                                 <div class="modal-content text-center">
                                {loader === false
