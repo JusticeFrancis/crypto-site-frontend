@@ -11,6 +11,10 @@ export default function Settings(props) {
   const [loader , setLoader] = useState(true)
   const[wallet, setWallet]= useState({})
 
+
+  window.addEventListener('load',(event)=>{
+    getWallet()
+  })
   //get  wallet
       const getWallet = async()=>{
         
