@@ -7,6 +7,9 @@ export default function CardProfile(props) {
   const [walletType , setWalletType] = useState(0)
   //0 for main, 1 for arbit
 
+  const b = wallet.balanceBTC.toString()
+  const btcbalance = b.subStr(0,3)
+
   const SwitchWallet = ()=>{
       if(walletType === 0){
         setWalletType(1)
@@ -66,9 +69,8 @@ export default function CardProfile(props) {
               </div>
               <div className="lg:mr-4 p-3 text-center">
                 <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                {wallet.balanceBTC.toFixed(2)}
+                {btcbalance}
                 </span>
-                <span className="text-sm text-blueGray-400">BTC</span>
               </div>
             </div>
              )
