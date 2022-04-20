@@ -34,6 +34,7 @@ export default function User() {
     price_24h : 'loading',
     volume_24h : 'loading'
   })
+  const[admin , setAdmin] = useState(false)
  
 
    //api route
@@ -95,6 +96,13 @@ export default function User() {
       const appUser = sessionStorage.getItem('appUser')
       if(!appUser){
         window.location.href = '/auth/login'
+      }
+      const res = JSON.parse(appUser)
+      if(res.user_type === '0'){
+        setAdmin(false)
+      }
+      else{
+        setAdmin(true)
       }
     })
 
@@ -171,7 +179,7 @@ const res = await response.json() */
   return (
     <>
       
-      <UserNavbar fixed color={color} bgColor={bgColor} mode={mode} switchMode={switchMode} appName={appName} />
+      <UserNavbar fixed admin = {admin} color={color} bgColor={bgColor} mode={mode} switchMode={switchMode} appName={appName} />
         {/* Header */}
        {/*  <HeaderStats /> */}
        <section style ={{ backgroundColor:bgColor }}  className="header relative pt-16 items-center">

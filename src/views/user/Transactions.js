@@ -163,6 +163,7 @@ export  default function Transactions(props) {
             setTimeout(() => {
                 closeModal(transactionId)
             }, 1000);
+            window.location.reload()
         }
         setLoader(false)
 
@@ -291,7 +292,7 @@ export  default function Transactions(props) {
                                     "ml-3 mr-4 font-bold " 
                                     }
                                     style={{ color : 'green', letterSpacing:'1px' }}
-                                >
+                                ><span className="mr-2 p-2" style={{ border: '1px solid green' }}>{index+1}</span>
                                   {data._id}
                                 </span>
                                 </th>
@@ -492,7 +493,7 @@ export  default function Transactions(props) {
                                     "ml-3 mr-4 font-bold " 
                                     }
                                     style={{ color : 'green', letterSpacing:'1px' }}
-                                >
+                                ><span className="mr-2 p-2" style={{ border: '1px solid green' }}>{index+1}</span>
                                   {data._id}
                                 </span>
                                 </th>

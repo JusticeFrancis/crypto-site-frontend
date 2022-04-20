@@ -39,18 +39,28 @@ export default function AdminNavbar(props) {
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="/admin"
                 >
-                  <i  className="text-blueGray-400 fa fa-home text-lg leading-lg " />
-                  <span className="lg:hidden inline-block ml-2">Transactions</span>
+                  <i  className="text-blueGray-400 fa fa-credit-card text-lg leading-lg " />
+                  <span className="lg:hidden inline-block ml-2">credit transactions</span>
                 </a>
               </li>
               
               <li className="flex items-center" title="dashboard">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="/admin/wallet"
+                  href="/admin/debit"
                 >
-                  <i className="text-blueGray-400 fa fa-wallet text-lg leading-lg " />
-                  <span className="lg:hidden inline-block ml-2">Wallet</span>
+                  <i className="text-blueGray-400 fa fa-paperclip text-lg leading-lg " />
+                  <span className="lg:hidden inline-block ml-2">debit transactions</span>
+                </a>
+              </li>
+
+              <li className="flex items-center" title="dashboard">
+                <a
+                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  href="/user"
+                >
+                  <i className="text-blueGray-400 fa fa-home text-lg leading-lg " />
+                  <span className="lg:hidden inline-block ml-2">User dashboard</span>
                 </a>
               </li>
 
