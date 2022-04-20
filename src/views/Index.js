@@ -121,8 +121,8 @@ export default function Index() {
                         Growth Capital
                       </h6>
                       <p className="mb-4 text-blueGray-500">
-                        Notus React comes with a huge number of Fully Coded CSS
-                        components.
+                      With Tether Invest you get to watch your capital grow through
+                      token staking over a period of time and also be able to access and withdraw interests every 15 days
                       </p>
                     </div>
                   </div>
