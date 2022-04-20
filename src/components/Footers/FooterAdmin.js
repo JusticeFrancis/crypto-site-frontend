@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function FooterAdmin() {
-  const appName = 'Invest App'
+  const appName = 'Tether Invest'
   return (
     <>
       <footer className="block py-4">
