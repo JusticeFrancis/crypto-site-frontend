@@ -71,6 +71,7 @@ export default function CardProfile(props) {
                 <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
                 {btcbalance}
                 </span>
+                <span className="text-sm text-blueGray-400">BTC</span>
               </div>
             </div>
              )
