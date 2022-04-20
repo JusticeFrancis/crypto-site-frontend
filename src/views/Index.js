@@ -11,7 +11,7 @@ export default function Index() {
 
 
  
-  const appName = 'Invest App'
+  const appName = 'Tether Invest'
   const register ='/auth/register'
   const login ='/auth/login'
 
@@ -25,13 +25,12 @@ export default function Index() {
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-semibold text-4xl text-blueGray-600">
-                {appName} - Invest and get your reward in days.
+                {appName} - HEY INVESTOR.
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                {appName} is Free and Open Source investing platform for you
-                to make that first million
-                . It features multiple dashboard investment options and plans for you,
-                come on board.
+                {appName} makes the average person who wants to trade crypto
+                 get involved in trading without the need for any basic knowledge or set skill. 
+                 Just sit back and let your token work for you!
               </p>
               <div className="mt-12">
                 <a
@@ -103,10 +102,8 @@ export default function Index() {
                     Hey Investor
                   </h4>
                   <p className="text-md font-light mt-2 text-white">
-                    Putting together a page has never been easier than matching
-                    together pre-made components. From landing pages
-                    presentation to login areas, you can easily customise and
-                    built your pages.
+                  Tether Invest makes the average person who wants to trade crypto get involved
+                   in trading without the need for any basic knowledge or set skill. Just sit back and let your token work for you!.
                   </p>
                 </blockquote>
               </div>
@@ -135,11 +132,10 @@ export default function Index() {
                         <i className="fas fa-drafting-compass"></i>
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">
-                        Down Funds
+                      Profitable Trading
                       </h6>
                       <p className="mb-4 text-blueGray-500">
-                        We also feature many dynamic components for React,
-                        NextJS, Vue and Angular.
+                      Our analysts and expert traders have done all the technical and fundamental analysis to make sure trades are profitable.
                       </p>
                     </div>
                   </div>
@@ -152,8 +148,10 @@ export default function Index() {
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">Payment and Funds</h6>
                       <p className="mb-4 text-blueGray-500">
-                        This extension also comes with 3 sample pages. They are
-                        fully coded so you can start working instantly.
+                      Funds are accessible for withdrawal 15 days after top up. This is to ensure the system rewards more accumulators 
+                      than exit investors. 
+                      <br/>
+                      All withdrawals from the system are paid straight into the wallets of our clients and payments are swift
                       </p>
                     </div>
                   </div>
@@ -163,11 +161,33 @@ export default function Index() {
                         <i className="fas fa-file-alt"></i>
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">
-                        Gradle Graph
+                      THE 3 & 6 MONTH PLAN
                       </h6>
                       <p className="mb-4 text-blueGray-500">
-                        Built by developers for developers. You will love how
-                        easy is to to work with Notus React.
+                      The 3 Month Plan is set up so that investors who want to accumulate their funds over a period 
+                      of 3 months get 8% daily instead of 5% daily.
+                      <br/>
+                      The 6 Month Plan gives investors who want to accumulate their funds 10% daily instead of 5% or 8%
+                      </p>
+                    </div>
+                  </div>
+                  <div className="relative flex flex-col min-w-0">
+                    <div className="px-4 py-5 flex-auto">
+                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                        <i className="fa fa-wallet"></i>
+                      </div>
+                      <h6 className="text-xl mb-1 font-semibold">
+                      Expected Returns
+                      </h6>
+                      <p className="mb-4 text-blueGray-500">
+                      An investment of $100 gives you a return of $205.8 after 15 days <br/>
+                      An investment of $1000 gives you a return of $2,058 after 15 days <br/>
+                      An investment of $10000 gives you a return of $20,580 after 15 days <br/>
+                      An investment of $100 with the 3 months plan gives you $8,073 <br/>
+                      An investment of $1000 with the 3 months plan gives you $80,730  <br/>
+                      An investment of $100 with the 6 months plan gives $651,736 <br/>
+                      An investment of $1000 with the 6 months plan gives $6,517,360 <br/>
+                      Investments above $1000 with the 6 months plan are not allowed! <br/>
                       </p>
                     </div>
                   </div>
