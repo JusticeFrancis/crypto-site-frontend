@@ -97,7 +97,7 @@ export default function UserNavbar(props) {
               <li className="flex items-center" title="settings">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="/user/settings"
+                  href="/user/wallet"
                 >
                   <i className="text-blueGray-400 fa fa-wallet text-lg leading-lg " />
                   <span style={{color: color }} className="lg:hidden inline-block ml-2">Wallet</span>

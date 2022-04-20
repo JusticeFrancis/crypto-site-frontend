@@ -8,7 +8,7 @@ export default function CardProfile(props) {
   //0 for main, 1 for arbit
 
   const b = wallet.balanceBTC.toString()
-  const btcbalance = b.subStr(0,3)
+  const btcbalance = b.substr(0,3)
 
   const SwitchWallet = ()=>{
       if(walletType === 0){

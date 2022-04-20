@@ -214,7 +214,7 @@ const res = await response.json() */
                    user = {user}
                   ></Transactions>
                 </Route>
-                <Route path="/user/settings" exact>
+                <Route path="/user/wallet" exact>
                   <Settings
                   backend = {backend}
                   user = {user}
