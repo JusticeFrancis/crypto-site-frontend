@@ -16,7 +16,7 @@ import Credit from "views/admin/Credit";
 import Debit from "views/admin/Debit";
 
 export default function Admin() {
-  const appName ='Invest App'
+  const appName ='Tetherinvest'
   //api route
   const backend = 'https://crypto-site-backend.herokuapp.com'
   window.addEventListener('load',(event)=>{

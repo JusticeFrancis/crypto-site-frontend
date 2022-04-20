@@ -114,7 +114,7 @@ export default function User() {
   
 
 
-  const appName = 'Invest App'
+  const appName = 'Tetherinvest'
   let data = JSON.parse(localStorage.getItem('data'))
   let datacolor , databgColor , datamode
   if(data === null){

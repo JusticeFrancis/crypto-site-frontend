@@ -24,7 +24,7 @@ export default function Auth() {
   const backend = 'https://crypto-site-backend.herokuapp.com'
 
 
-  const appName = 'Invest App'
+  const appName = 'Tetherinvest'
 
   window.addEventListener('load',(event)=>{
     //check if user is auth
