@@ -63,7 +63,7 @@ export default function Footer(props) {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation?ref=nr-footer"
+                        href="/user"
                       >
                         Dashboard
                       </a>
@@ -71,7 +71,7 @@ export default function Footer(props) {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://blog.creative-tim.com?ref=nr-footer"
+                        href="/auth/login"
                       >
                         Login
                       </a>
@@ -79,7 +79,7 @@ export default function Footer(props) {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial?ref=nr-footer"
+                        href="/auth/register"
                       >
                         Register
                       </a>
@@ -87,7 +87,7 @@ export default function Footer(props) {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=nr-footer"
+                        href="/user/credit"
                       >
                         Credit
                       </a>
@@ -102,15 +102,7 @@ export default function Footer(props) {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://github.com/creativetimofficial/notus-react/blob/main/LICENSE.md?ref=nr-footer"
-                      >
-                        About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms?ref=nr-footer"
+                        href=""
                       >
                         Terms & Conditions
                       </a>
@@ -118,7 +110,7 @@ export default function Footer(props) {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy?ref=nr-footer"
+                        href=""
                       >
                         Privacy Policy
                       </a>
@@ -126,7 +118,7 @@ export default function Footer(props) {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us?ref=nr-footer"
+                        href=""
                       >
                         Contact Us
                       </a>
