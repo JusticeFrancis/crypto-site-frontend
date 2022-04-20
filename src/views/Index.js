@@ -192,6 +192,27 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
+
+                <div className="w-full md:w-6/12 px-4">
+                  <div className="relative flex flex-col min-w-0 mt-4">
+                    <div className="px-4 py-5 flex-auto">
+                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                        <i className="fas fa-newspaper"></i>
+                      </div>
+                      <h6 className="text-xl mb-1 font-semibold">Expected Returns</h6>
+                      <p className="mb-4 text-blueGray-500">
+                      An investment of $100 gives you a return of $205.8 after 15 days <br/>
+                      An investment of $1000 gives you a return of $2,058 after 15 days <br/>
+                      An investment of $10000 gives you a return of $20,580 after 15 days <br/>
+                      An investment of $100 with the 3 months plan gives you $8,073 <br/>
+                      An investment of $1000 with the 3 months plan gives you $80,730  <br/>
+                      An investment of $100 with the 6 months plan gives $651,736 <br/>
+                      An investment of $1000 with the 6 months plan gives $6,517,360 <br/>
+                      Investments above $1000 with the 6 months plan are not allowed! <br/>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
