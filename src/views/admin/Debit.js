@@ -56,7 +56,7 @@ export default function Debit(props) {
             headers: { 'Content-Type': 'application/json'},
             body : JSON.stringify({ transaction_id : transaction_id, admin : user.email, email : email, type : 'debit'})
         };
-        const response = await fetch('http://localhost:7000/admin/approve_transaction', requestOptions)
+        const response = await fetch(backend+'/admin/approve_transaction', requestOptions)
         const res = await response.json()
         
     
