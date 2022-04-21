@@ -8,7 +8,7 @@ export default function CardProfile(props) {
   //0 for main, 1 for arbit
 
   const b = wallet.balanceBTC.toString()
-  const btcbalance = b.substr(0,3)
+  const btcbalance = b.substr(0,10)
 
   const SwitchWallet = ()=>{
       if(walletType === 0){
@@ -68,8 +68,13 @@ export default function CardProfile(props) {
                 <span className="text-sm text-blueGray-400">TXNS</span>
               </div>
               <div className="lg:mr-4 p-3 text-center">
-                <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                {btcbalance}
+                <span title={b} className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
+                {b.length > 3 
+                ? (
+                  <p style={{ fontSize : '15px' }}>{btcbalance}</p>
+                )
+                :  <p>{btcbalance}</p>
+                }
                 </span>
                 <span className="text-sm text-blueGray-400">BTC</span>
               </div>

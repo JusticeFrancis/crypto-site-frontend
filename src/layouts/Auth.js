@@ -13,6 +13,7 @@ import Register from "views/auth/Register.js";
 
 export default function Auth() {
   //auth
+  const[refCode , setRefCode] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [name, setName] = useState('')
@@ -52,7 +53,7 @@ export default function Auth() {
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: name , email: email, password: password , user_type : usertype})
+        body: JSON.stringify({ name: name , email: email, password: password , user_type : usertype, refkey : refCode})
     };
     const response = await fetch(backend+'/register', requestOptions)
     const res = await response.json()
@@ -128,6 +129,8 @@ export default function Auth() {
                 setRegisterBtn = {setRegisterBtn}
                 registerBtn = {registerBtn}
                 btnLoading = {btnLoading}
+                setRefCode = {setRefCode}
+                refCode = {refCode}
                 ></Register>
             </Route>
             <Redirect from="/auth" to="/auth/login" />

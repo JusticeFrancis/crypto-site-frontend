@@ -16,6 +16,7 @@ import Credit from "views/user/Credit";
 import Debit from "views/user/Debit";
 import Transactions from "views/user/Transactions";
 import Settings from "views/user/Settings";
+import Referrals from "views/user/Referrals"
 
 
 
@@ -219,7 +220,13 @@ const res = await response.json() */
                   backend = {backend}
                   user = {user}
                   ></Settings>
-                  </Route> 
+                </Route> 
+                <Route path="/user/referrals" exact>
+                  <Referrals
+                  backend = {backend}
+                  user = {user}
+                  ></Referrals>
+                </Route> 
                 <Redirect from="/user" to="/user/dashboard" />
               </Switch>
             </div>

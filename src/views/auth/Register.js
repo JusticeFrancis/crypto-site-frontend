@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Register(props) {
-  const {setEmail , setPassword , setName , registerUser,info , setRegisterBtn , registerBtn, btnLoading} = props
+  const {setEmail , setPassword , setName , registerUser,info , setRegisterBtn , registerBtn, btnLoading , setRefCode , refCode} = props
+  
   const login ='/auth/login'
+
+  window.addEventListener('load', (event)=>{
+    console.log('hi')
+    const urlParams =new URLSearchParams(document.location.search);
+    const needed = urlParams.get('ref_code')
+    setRefCode(needed)
+  })
+
+
   return (
     <>
       <div className="container mx-auto px-4 h-full">
@@ -62,6 +72,25 @@ export default function Register(props) {
                       type="password"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Password"
+                      onChange={(e)=>{
+                        setPassword(e.target.value)
+                   }}
+                    />
+                  </div>
+
+                  <div className="relative w-full mb-3">
+                    <label
+                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                      htmlFor="grid-password"
+                    >
+                      Referral_code (optional)
+                    </label>
+                    <input
+                      style={{ fontWeight: 'bolder', letterSpacing:'2px' , fontSize:'20px'}}
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      placeholder="continue to register without ref_code"
+                      disabled
+                      value={refCode}
                       onChange={(e)=>{
                         setPassword(e.target.value)
                    }}
