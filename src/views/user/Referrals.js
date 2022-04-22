@@ -228,13 +228,13 @@ export default function Referrals(props) {
                     <input
                       style={{ fontWeight: 'bolder', letterSpacing:'2px' , fontSize:'20px'}}
                       className="border-0 px-3 pr-4 py-3  bg-white rounded text-sm  focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder={"http://localhost:3000/auth/register/?ref_code="+ refCode}
+                      placeholder={"https://tetherinvest.org/auth/register/?ref_code="+ refCode}
                       disabled
                     />
                       </div>
 
                       <div className="relative flex flex-col   break-wors  ml-2   ">
-                      <CopyToClipboard text={"http://localhost:3000/auth/register/?ref_code="+ refCode}
+                      <CopyToClipboard text={"https://tetherinvest.org/auth/register/?ref_code="+ refCode}
                                 onCopy={() => {
                                     setCopied(true)
                                     setTimeout(() => {

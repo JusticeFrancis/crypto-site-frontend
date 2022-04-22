@@ -45,7 +45,7 @@ export default function UserNavbar(props) {
                     className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                     href="/admin"
                   >
-                    <i className="text-blueGray-400 fa-solid fa-user  text-lg leading-lg " />
+                    <i className="text-blueGray-400 fa fa-lock  text-lg leading-lg " />
                     <span style={{color: color }} className="lg:hidden inline-block ml-2">Admin Dashboard</span>
                   </a>
                 </li>
