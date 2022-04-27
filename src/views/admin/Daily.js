@@ -15,7 +15,7 @@ const Daily = (props) => {
     const daily = async()=>{
         setLoader(true)
         const requestOptions = {
-            method: 'GET',
+            method: 'POST',
             headers: { 'Content-Type': 'application/json'},
         };
         const response = await fetch(backend+'/update-wallet-daily', requestOptions)
