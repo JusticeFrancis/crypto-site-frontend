@@ -24,6 +24,7 @@ const Daily = (props) => {
         if(res.status === 'success'){
              setMsg('wallets successfully updated')
              setLoader(false)
+             setButton(false)
              return
                
          }
