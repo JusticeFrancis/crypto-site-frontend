@@ -5,8 +5,14 @@ const Daily = (props) => {
     const [loader , setLoader] = useState(false)
     const [msg , setMsg] = useState('')
 
+
+
+    const show = async()=>{
+        const elem = document.querySelector['#we']
+        elem.hidden = false 
+    }
+
     const daily = async()=>{
-        confirm()
         setLoader(true)
         const requestOptions = {
             method: 'GET',
@@ -58,12 +64,21 @@ const Daily = (props) => {
                         
                           
 
-                            <button id="myBtn" onClick={()=>{daily()}}
+                            <button id="myBtn" onClick={()=>{show()}}
                                     className="bg-lightBlue-500     text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline mr-1 ease-linear transition-all duration-150"
                                     type="button"
                                     >
                                     Make daily update
                                 </button>
+
+                                <div>
+                                <button id="myBtn" onClick={()=>{daily()}}
+                                    className="bg-lightBlue-500     text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline mr-1 ease-linear transition-all duration-150"
+                                    type="button"
+                                    >
+                                    ok to continue
+                                </button>
+                                </div>
                             </div>
 
 
