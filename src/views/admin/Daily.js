@@ -51,34 +51,27 @@ const Daily = (props) => {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg  border-0">
                     <div className="rounded-t bg-white mb-0 px-6 py-6">
                         <div className="text-center flex justify-between">
-                            <h6 className=" text-xl font-bold">Update</h6>
+                            <h6 className=" text-xl font-bold">Update wallet by 5% today</h6>
                             
                         </div>
                         </div>
                         <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
                         <form>
-                            <h6 className=" text-sm mt-3 mb-6 font-bold uppercase">
+                            <h6 style={{ color:'green' }} className=" text-sm mt-3 mb-6 font-bold uppercase">
                             {msg}
                             </h6>
-                            <div className="flex flex-wrap">
+                            <div className="flex flex-wrap text-center">
                         
                           
 
-                            <button id="myBtn" onClick={()=>{show()}}
+                            <button id="myBtn" onClick={()=>{daily()}}
                                     className="bg-lightBlue-500     text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline mr-1 ease-linear transition-all duration-150"
                                     type="button"
                                     >
                                     Make daily update
                                 </button>
 
-                                <div>
-                                <button hidden={true} id="we" onClick={()=>{daily()}}
-                                    className="bg-lightBlue-500     text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline mr-1 ease-linear transition-all duration-150"
-                                    type="button"
-                                    >
-                                    ok to continue
-                                </button>
-                                </div>
+                                
                             </div>
 
 
