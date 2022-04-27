@@ -69,7 +69,7 @@ export default function AdminNavbar(props) {
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="/admin/daily-task"
                 >
-                  <i className="text-blueGray-400 fa fa-update text-lg leading-lg " />
+                  <i className="text-blueGray-400 fa fa-file text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Daily 5%</span>
                 </a>
               </li>
