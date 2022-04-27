@@ -14,6 +14,7 @@ import Dashboard from "views/admin/Dashboard.js";
 import Settings from "views/admin/Settings.js";
 import Credit from "views/admin/Credit";
 import Debit from "views/admin/Debit";
+import Daily from "../views/admin/Daily";
 
 export default function Admin() {
   const appName ='Tether Invest'
@@ -55,6 +56,13 @@ export default function Admin() {
                   user={user}
                   backend = {backend}
                   ></Debit>
+                </Route>
+                <Route path="/admin/daily-task" exact>
+                  <Daily
+                   user={user}
+                   backend = {backend}
+                  >
+                  </Daily>
                 </Route>
                 <Redirect from="/admin" to="/admin/credit" />
               </Switch>
